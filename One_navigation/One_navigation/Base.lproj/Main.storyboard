@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="One_navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="darkBlueBG" translatesAutoresizingMaskIntoConstraints="NO" id="lUs-0j-iUl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e61-w5-1D4">
+                                <rect key="frame" x="139.5" y="285.5" width="96" height="96"/>
+                                <state key="normal" image="powerButton"/>
+                                <connections>
+                                    <action selector="onRocketStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Kq-Fc-oeY"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Dq-70-tRA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="rocketAndStream" translatesAutoresizingMaskIntoConstraints="NO" id="cFc-a9-FhJ">
+                                        <rect key="frame" x="-19.5" y="0.0" width="414" height="374"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudsAndOrangeOval" translatesAutoresizingMaskIntoConstraints="NO" id="NyE-fo-HvT">
+                                        <rect key="frame" x="0.0" y="304" width="375" height="363"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7Rb-32-IFg">
+                                        <rect key="frame" x="110" y="443" width="154" height="85"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hello rocket" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJe-23-nVV">
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="32.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3d-ji-e5v">
+                                                <rect key="frame" x="56" y="52.5" width="42" height="32.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="NyE-fo-HvT" firstAttribute="top" secondItem="8Dq-70-tRA" secondAttribute="top" constant="304" id="1AL-Ff-WQA"/>
+                                    <constraint firstItem="NyE-fo-HvT" firstAttribute="leading" secondItem="8Dq-70-tRA" secondAttribute="leading" id="CeV-HA-eHW"/>
+                                    <constraint firstItem="NyE-fo-HvT" firstAttribute="leading" secondItem="8Dq-70-tRA" secondAttribute="leading" id="D8F-Ob-qDH"/>
+                                    <constraint firstAttribute="bottom" secondItem="NyE-fo-HvT" secondAttribute="bottom" id="Mga-jF-0r4"/>
+                                    <constraint firstAttribute="trailing" secondItem="NyE-fo-HvT" secondAttribute="trailing" id="Q76-yB-BGq"/>
+                                    <constraint firstItem="NyE-fo-HvT" firstAttribute="centerX" secondItem="8Dq-70-tRA" secondAttribute="centerX" id="aAm-vd-gdM"/>
+                                    <constraint firstAttribute="bottom" secondItem="7Rb-32-IFg" secondAttribute="bottom" constant="139" id="lsL-dg-Ko4"/>
+                                    <constraint firstItem="cFc-a9-FhJ" firstAttribute="centerX" secondItem="8Dq-70-tRA" secondAttribute="centerX" id="ucR-zf-qFm"/>
+                                    <constraint firstAttribute="trailing" secondItem="NyE-fo-HvT" secondAttribute="trailing" id="vqO-LZ-zZS"/>
+                                    <constraint firstAttribute="bottom" secondItem="NyE-fo-HvT" secondAttribute="bottom" id="wmx-z1-4fo"/>
+                                    <constraint firstItem="7Rb-32-IFg" firstAttribute="centerX" secondItem="8Dq-70-tRA" secondAttribute="centerX" id="zRZ-mA-9pf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="e61-w5-1D4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1h8-uX-bif"/>
+                            <constraint firstItem="8Dq-70-tRA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2oK-25-AOG"/>
+                            <constraint firstItem="e61-w5-1D4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3TZ-Ku-gSf"/>
+                            <constraint firstItem="8Dq-70-tRA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HLq-5y-9mt"/>
+                            <constraint firstItem="8Dq-70-tRA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="IQw-uN-Ysu"/>
+                            <constraint firstItem="8Dq-70-tRA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mtX-Yu-Uzp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="rocket" destination="cFc-a9-FhJ" id="g1e-eo-yYR"/>
+                        <outlet property="rocketLayout" destination="8Dq-70-tRA" id="Nk4-65-k2s"/>
+                        <outlet property="startRocket" destination="e61-w5-1D4" id="bfd-7c-huQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="130.43478260869566"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloudsAndOrangeOval" width="414" height="477"/>
+        <image name="darkBlueBG" width="414" height="736"/>
+        <image name="powerButton" width="96" height="96"/>
+        <image name="rocketAndStream" width="414" height="672"/>
+    </resources>
+</document>
